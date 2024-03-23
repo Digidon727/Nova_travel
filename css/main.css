@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+body {
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.3;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.btn {
+	text-align: center;
+	background-color: #86b817;
+	padding: 8px 25px;
+	border-radius: 20px;
+	width: 200px;
+}
+a {
+	color: #fff;
+}
+
+/*----Меню----*/
+
+.header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.header::before {
+	content: ''; /* Создаем пустой псевдоэлемент */
+	position: absolute; /* Позиционируем псевдоэлемент абсолютно относительно родительского элемента */
+	top: 0; /* Размещаем его вверху */
+	right: 0; /* Размещаем его справа */
+	bottom: 0; /* Размещаем его внизу */
+	left: 0; /* Размещаем его слева */
+	background-color: rgba(
+		41,
+		41,
+		41,
+		0.5
+	); /* Цвет затемнения: черный с прозрачностью 0.5 */
+}
+
+.header__menu {
+	margin: 0 50px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	border-bottom: 1px solid #cccccc;
+}
+.header__nav-logo {
+	color: #fff;
+	cursor: pointer;
+	font-size: 22px;
+}
+.header__nav {
+	margin-left: auto;
+}
+.nav {
+}
+.nav__item {
+	display: flex;
+	column-gap: 35px;
+}
+.nav__list {
+}
+.nav__link {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 1px;
+	position: relative;
+}
+.nav__link:hover {
+	color: #86b817;
+	transition: all 0.3s ease;
+}
+.nav__link:hover::before {
+	width: 100%;
+	opacity: 1;
+}
+.nav__link::before {
+	content: '';
+	display: block;
+	background-color: #86b817;
+	transition: all 0.3s ease;
+	width: 0;
+	height: 1px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+/*----Главная----*/
+.header__button {
+	text-align: center;
+	margin-left: 35px;
+	width: 150px;
+}
+.header__button:hover {
+	background-color: #9dd623;
+}
+
+.reg_btn {
+	color: #fff;
+}
+
+.header__img-bg {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.header_info {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 200px 0;
+}
+.header__info-title {
+	font-size: 46px;
+	margin-bottom: 20px;
+}
+.header__info-desc {
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+
+.header__info-btn {
+	width: 200px;
+	margin: 0 auto;
+}
+
+/*----О нас----*/
+
+.about {
+	padding: 80px 0;
+	color: #808b8d;
+}
+
+.about__wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	column-gap: 30px;
+}
+.about__info-left {
+	text-align: center;
+	width: 50%;
+}
+.about__decs {
+	display: flex;
+	justify-content: center;
+	column-gap: 20px;
+	align-items: center;
+	color: #86b817;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.about__decs span {
+	width: 100px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	background-color: #86b817;
+}
+
+.desc {
+}
+.about__info-title {
+	font-size: 40px;
+	font-weight: 600;
+	color: #000;
+	margin-top: 10px;
+	margin-bottom: 24px;
+}
+.about__info-text {
+	margin-bottom: 30px;
+}
+.about__info-services {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.about__info-services-left {
+	margin-right: 80px;
+}
+.about__info-list {
+}
+.about__info-item {
+	display: flex;
+	column-gap: 5px;
+	margin-bottom: 10px;
+}
+.ri-flag-2-fill {
+	color: #86b817;
+}
+.about__info-services-rigth {
+}
+.about__info-btn {
+	margin: 0 auto;
+}
+.btn {
+}
+.about__info-more {
+}
+.about__info-rigth {
+	width: 50%;
+}
+.about__info-img {
+	width: 600px;
+	max-width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
