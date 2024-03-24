@@ -5,6 +5,7 @@ body {
 	font-size: 16px;
 	color: #fff;
 	line-height: 1.3;
+	background-color: #f5f5f5;
 }
 
 .container {
@@ -48,14 +49,16 @@ a {
 }
 
 .header__menu {
-	margin: 0 50px;
-	padding: 20px;
+	padding: 10px 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 2;
-	border-bottom: 1px solid #cccccc;
+	background-color: #86b817;
 }
 .header__nav-logo {
 	color: #fff;
@@ -79,10 +82,7 @@ a {
 	letter-spacing: 1px;
 	position: relative;
 }
-.nav__link:hover {
-	color: #86b817;
-	transition: all 0.3s ease;
-}
+
 .nav__link:hover::before {
 	width: 100%;
 	opacity: 1;
@@ -90,7 +90,7 @@ a {
 .nav__link::before {
 	content: '';
 	display: block;
-	background-color: #86b817;
+	background-color: #fff;
 	transition: all 0.3s ease;
 	width: 0;
 	height: 1px;
@@ -106,20 +106,17 @@ a {
 	text-align: center;
 	margin-left: 35px;
 	width: 150px;
+	background-color: #9dd623;
+	transition: all 0.3s ease;
 }
 .header__button:hover {
-	background-color: #9dd623;
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+	transition: all 0.3s ease;
 }
 
 .reg_btn {
 	color: #fff;
-}
-
-.header__img-bg {
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	object-fit: cover;
 }
 
 .header_info {
@@ -145,21 +142,20 @@ a {
 /*----О нас----*/
 
 .about {
-	padding: 80px 0;
+	padding: 80px 0 30px 0;
 	color: #808b8d;
 }
 
 .about__wrapper {
 	display: flex;
 	justify-content: space-between;
-
 	column-gap: 30px;
 }
 .about__info-left {
 	text-align: center;
 	width: 50%;
 }
-.about__decs {
+.about__desc {
 	display: flex;
 	justify-content: center;
 	column-gap: 20px;
@@ -169,7 +165,7 @@ a {
 	font-size: 30px;
 }
 
-.about__decs span {
+.desc span {
 	width: 100px;
 	height: 2px;
 	top: 0;
@@ -177,10 +173,8 @@ a {
 	background-color: #86b817;
 }
 
-.desc {
-}
 .about__info-title {
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 600;
 	color: #000;
 	margin-top: 10px;
@@ -198,8 +192,7 @@ a {
 .about__info-services-left {
 	margin-right: 80px;
 }
-.about__info-list {
-}
+
 .about__info-item {
 	display: flex;
 	column-gap: 5px;
@@ -208,15 +201,11 @@ a {
 .ri-flag-2-fill {
 	color: #86b817;
 }
-.about__info-services-rigth {
-}
+
 .about__info-btn {
 	margin: 0 auto;
 }
-.btn {
-}
-.about__info-more {
-}
+
 .about__info-rigth {
 	width: 50%;
 }
@@ -225,4 +214,175 @@ a {
 	max-width: 100%;
 	height: 500px;
 	object-fit: cover;
+}
+
+/*----Наши услуги----*/
+
+.services {
+	padding: 20px 0;
+	color: #000;
+}
+
+.services__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	column-gap: 5px;
+	row-gap: 20px;
+	margin-top: 50px;
+}
+.services__box {
+	text-align: center;
+	width: 280px;
+	padding: 25px 15px;
+	background-color: #fff;
+	transition: transform 0.6s ease, box-shadow 0.7s ease;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.services__box:hover {
+	transform: scale(1.05);
+	/* Увеличиваем размер до 110% при наведении */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+	background-color: #9dd623;
+	transition: all 0.5s ease;
+	color: #fff;
+}
+
+.services__box img {
+	width: 40px;
+	height: 40px;
+}
+
+.services__box-title {
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.services__box-desc {
+}
+
+/*----Наши туры----*/
+.tours {
+	padding: 50px 0;
+	color: #000;
+}
+
+.tours .about__desc {
+	margin-bottom: 30px;
+}
+.tours__wrapper {
+	/* width: 90%;
+	margin: 0 auto; */
+}
+.tours__box {
+	min-width: 320px;
+	height: 500px;
+	text-align: center;
+	background-color: #fff;
+	position: relative;
+}
+.tours__info-blocks {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #86b817;
+}
+.tours__info-block {
+	display: flex;
+	padding: 10px;
+}
+.tours__info-block img {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.tours__price {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 20px 0;
+}
+.tours__box-desc {
+	color: #808b8d;
+	margin-bottom: 24px;
+}
+
+.splide__pagination {
+	bottom: -30px;
+}
+.splide__track {
+	padding: 30px 0;
+}
+
+/* Сначала увеличиваем масштаб центрального слайда */
+.splide__slide.is-active {
+	transform: scale(1.03); /* Увеличиваем размер активного слайда */
+	z-index: 2; /* Убедитесь, что он находится поверх других слайдов */
+	transition: transform 0.5s ease; /* Добавляем плавный переход */
+}
+/* Добавляем тень для выделения */
+
+/* Уменьшаем непрямые слайды, если это необходимо */
+/* .splide__slide:not(.is-active) {
+	transform: scale(1);
+	transition: transform 0.5s ease;
+} */
+
+.splide__pagination__page {
+	background-color: #86b817;
+	height: 10px;
+	width: 10px;
+}
+
+/*----Сотрудники нашей компании----*/
+.guide {
+	padding: 50px 0;
+	color: #000;
+}
+
+.guide .about__desc {
+	margin-bottom: 30px;
+}
+
+.guide__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.guide__box {
+	width: 320px;
+	text-align: center;
+	background-color: #fff;
+}
+.guide__box-mane {
+	object-fit: cover;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 20px;
+}
+.guide__box-name {
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.guide__box-desc {
+	color: #808b8d;
+}
+.guide__box-social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.guide__box-social a img {
+	transition: transform 0.3s ease; /* Добавляем плавную анимацию */
+}
+
+.guide__box-social a:hover img {
+	transform: translateY(
+		-5px
+	); /* Поднимаем изображение на 2px при наведении курсора */
 }
