@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const BgSplide = new Splide('.splide', {
+	new Splide('#slider1', {
 		type: 'loop',
 		perPage: 3,
 		rewind: true,
@@ -10,5 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		// autoplay: true, // Включаем автоматическую прокрутку
 		// interval: 2000,
 		// pauseOnHover: true,
+	}).mount()
+
+	new Splide('#slider2', {
+		type: 'slide',
+		perPage: 3,
+		arrows: false,
+		autoplay: true,
+		interval: 6000,
 	}).mount()
 })

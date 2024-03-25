@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
-
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Nova_Travel</title>
@@ -30,7 +29,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <a href="#" class="nav__link">О нас</a>
             </li>
             <li class="nav__list">
-              <a href="#" class="nav__link">Наши услуги</a>
+              <a href="#" class="nav__link">Услуги</a>
             </li>
             <li class="nav__list">
               <a href="#" class="nav__link">Туры</a>
@@ -78,13 +77,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="about__info-services">
             <div class="about__info-services-left">
               <div class="about__info-list">
-                <div class="about__info-item"><i class="ri-flag-2-fill"></i>
+                <div class="about__info-item">
+                  <img src="./images/about/send-plane-2-fill.svg" alt="">
                   <p>First Class Flights</p>
                 </div>
-                <div class="about__info-item"><i class="ri-flag-2-fill"></i>
+                <div class="about__info-item">
+                  <img src="./images/about/send-plane-2-fill.svg" alt="">
                   <p>First Class Flights</p>
                 </div>
-                <div class="about__info-item"><i class="ri-flag-2-fill"></i>
+                <div class="about__info-item">
+                  <img src="./images/about/send-plane-2-fill.svg" alt="">
                   <p>First Class Flights</p>
                 </div>
               </div>
@@ -92,13 +94,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
             <div class="about__info-services-rigth">
               <div class="about__info-list">
-                <div class="about__info-item"><i class="ri-flag-2-fill"></i>
+                <div class="about__info-item">
+                  <img src="./images/about/send-plane-2-fill.svg" alt="">
                   <p>First Class Flights</p>
                 </div>
-                <div class="about__info-item"><i class="ri-flag-2-fill"></i>
+                <div class="about__info-item">
+                  <img src="./images/about/send-plane-2-fill.svg" alt="">
                   <p>First Class Flights</p>
                 </div>
-                <div class="about__info-item"><i class="ri-flag-2-fill"></i>
+                <div class="about__info-item">
+                  <img src="./images/about/send-plane-2-fill.svg" alt="">
                   <p>First Class Flights</p>
                 </div>
               </div>
@@ -119,7 +124,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     </div>
   </section>
-
 
   <section class="services">
     <div class="container">
@@ -181,7 +185,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <div class="container">
       <h3 class="about__desc desc"><span></span>Наши туры<span></span></h3>
       <div class="tours__wrapper">
-        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide" id="slider1" role="group" aria-label="Splide Basic HTML Example">
           <div class="splide__track">
             <ul class="splide__list ">
               <li class="splide__slide">
@@ -360,7 +364,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <h3 class="about__desc desc"><span></span>Сотрудники нашей компании<span></span></h3>
       <div class="guide__wrapper">
         <div class="guide__box">
-          <img class="guide__box-mane" src="./images/guide/guide.jpg" alt="">
+          <img class="guide__box-mane" src="./images/guide/guide.png" alt="">
           <div class="guide__box-name">
             <h4>Александор Петренко</h4>
           </div>
@@ -375,7 +379,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
 
         <div class="guide__box">
-          <img class="guide__box-mane" src="./images/guide/guide.jpg" alt="">
+          <img class="guide__box-mane" src="./images/guide/guide.png" alt="">
           <div class="guide__box-name">
             <h4>Александор Петренко</h4>
           </div>
@@ -390,7 +394,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
 
         <div class="guide__box">
-          <img class="guide__box-mane" src="./images/guide/guide.jpg" alt="">
+          <img class="guide__box-mane" src="./images/guide/guide.png" alt="">
           <div class="guide__box-name">
             <h4>Александор Петренко</h4>
           </div>
@@ -408,6 +412,157 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   </section>
 
 
+
+
+  <section class="clients">
+    <div class="container">
+      <h3 class="about__desc desc"><span></span>Отзывы наших клиентов<span></span></h3>
+
+      <div class="clients__wrapper">
+
+        <div class="splide" id="slider2" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <figure class="snip1139">
+                  <blockquote>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe
+                    is that none of it has tried to contact us.
+                    <div class="arrow"></div>
+                  </blockquote>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+                  <div class="author">
+                    <h5>Pelican Steve </h5>
+                  </div>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="snip1139">
+                  <blockquote>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe
+                    is that none of it has tried to contact us.
+                    <div class="arrow"></div>
+                  </blockquote>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+                  <div class="author">
+                    <h5>Pelican Steve </h5>
+                  </div>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="snip1139">
+                  <blockquote>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe
+                    is that none of it has tried to contact us.
+                    <div class="arrow"></div>
+                  </blockquote>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+                  <div class="author">
+                    <h5>Pelican Steve </h5>
+                  </div>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="snip1139 hover">
+                  <blockquote>I don't need to compromise on my principles, because they don't have the slightest bearing
+                    on what happens to me anyway.
+                    <div class="arrow"></div>
+                  </blockquote>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg" alt="sample47" />
+                  <div class="author">
+                    <h5>Max Conversion</h5>
+                  </div>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="snip1139">
+                  <blockquote>That's the problem with nature, something's always stinging you or oozing mucous all over
+                    you. Let's go and watch TV.
+                    <div class="arrow"></div>
+                  </blockquote>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+                  <div class="author">
+                    <h5>Eleanor Faint</h5>
+                  </div>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="snip1139">
+                  <blockquote>Sometimes I think the surest sign that intelligent life exists elsewhere in the universe
+                    is that none of it has tried to contact us.
+                    <div class="arrow"></div>
+                  </blockquote>
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample3.jpg" alt="sample3" />
+                  <div class="author">
+                    <h5>Pelican Steve </h5>
+                  </div>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="forms" style="background-image: url(./images/form/bg-form.jpg);">
+    <div class="container">
+      <div class="form__wrapper">
+        <div class="form__box-left">
+          <h4 class="form__box-left-title">Оформи заявку онлайн</h4>
+          <p class="form__box-left-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat aliquam obcaecati laborum dicta
+            architecto quia officiis natus. Veniam, ad!
+          </p>
+          <p class="form__box-left-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat aliquam obcaecati laborum dicta
+            architecto quia officiis natus. Veniam, ad!
+          </p>
+          <p class="form__box-left-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat aliquam obcaecati laborum dicta
+            architecto quia officiis natus. Veniam, ad!
+          </p>
+        </div>
+        <div class="form__box-rigth">
+          <form class="form" action="#">
+            <input class="form__box-input" type="text" name="name" placeholder="Имя" required>
+            <input class="form__box-input" type="text" name="email" placeholder="E-mail" required>
+            <textarea class="form__box-text" name="text" id="" cols="30" rows="5"
+              placeholder="Дополнительная информация"></textarea>
+            <button class="form__box-btn" type="submit">Оформить заявку</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__box">
+          <img class="footer__maps" src="./images/footer/map.svg" alt="">
+          <p>23 Street, New York, USA</p>
+        </div>
+        <div class="footer__box">
+          <img class="footer__phone" src="./images/footer/phone.svg" alt="">
+          <a href="tel: +996 555-21-21-21">+996 555-21-21-21</a>
+        </div>
+        <div class="footer__box">
+          <img class="footer__mail" src="./images/footer/mail.svg" alt="">
+          <a href="#">info@example.com</a>
+        </div>
+        <div class="footer__box">
+          <a href="#"><img class="footer__social" src="./images/footer/whatsapp.svg" alt=""></a>
+          <a href="#"><img class="footer__social" src="./images/footer/telegram.svg" alt=""></a>
+          <a href="#"><img class="footer__social" src="./images/footer/instagram.svg" alt=""></a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="
