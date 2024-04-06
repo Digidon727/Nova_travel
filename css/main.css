@@ -151,6 +151,15 @@ a {
 	transform: rotate(45deg);
 	top: calc(50% - 1px);
 }
+
+.btn-menu {
+	display: none;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 0px 30px;
+	border-radius: 20px;
+	width: 200px;
+}
 /*----Стили для меню в мобильной версии END----*/
 
 /*----Главная----*/
