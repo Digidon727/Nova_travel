@@ -25,6 +25,10 @@ a {
 	color: #fff;
 }
 
+.div__hidden {
+	display: none;
+}
+
 /*----Меню----*/
 
 .header {
@@ -73,14 +77,16 @@ a {
 .nav__item {
 	display: flex;
 	column-gap: 35px;
+	position: relative;
+	transition: all 0.8s ease;
 }
+
 .nav__list {
 }
 .nav__link {
 	color: #fff;
 	font-weight: 500;
 	letter-spacing: 1px;
-	position: relative;
 }
 
 .nav__link:hover::before {
@@ -100,6 +106,52 @@ a {
 	transform: translateX(-50%);
 	opacity: 0;
 }
+
+/*----Стили для меню в мобильной версии----*/
+.menu__icon {
+	display: none;
+	width: 30px;
+	height: 18px;
+	position: relative;
+	margin-left: auto;
+	cursor: pointer;
+	z-index: 5;
+}
+.menu__icon span {
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.5s ease;
+}
+
+.menu__icon span:first-child {
+	top: 0;
+}
+
+.menu__icon span:last-child {
+	top: auto;
+	bottom: 0;
+}
+.menu__icon.active span {
+	transform: scale(0);
+}
+
+.nav__item.active {
+	transform: translateY(0);
+}
+
+.menu__icon.active span:first-child {
+	transform: rotate(-45deg);
+	top: calc(50% - 1px);
+}
+.menu__icon.active span:last-child {
+	transform: rotate(45deg);
+	top: calc(50% - 1px);
+}
+/*----Стили для меню в мобильной версии END----*/
 
 /*----Главная----*/
 .header__button {
@@ -158,6 +210,7 @@ a {
 .about__desc {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	column-gap: 20px;
 	align-items: center;
 	color: #86b817;
@@ -237,7 +290,8 @@ a {
 }
 .services__box {
 	text-align: center;
-	width: 280px;
+	width: 100%;
+	max-width: 280px;
 	padding: 25px 15px;
 	background-color: #fff;
 	transition: transform 0.6s ease, box-shadow 0.7s ease;
@@ -275,11 +329,11 @@ a {
 }
 
 .tours__box {
-	min-width: 320px;
-	height: 500px;
+	width: 320px;
 	text-align: center;
 	background-color: #fff;
-	position: relative;
+	padding-bottom: 20px;
+	/* position: relative; */
 }
 .tours__info-blocks {
 	display: flex;
@@ -304,6 +358,7 @@ a {
 .tours__box-desc {
 	color: #808b8d;
 	margin-bottom: 24px;
+	padding: 0 5px;
 }
 
 .splide__pagination {
@@ -311,6 +366,12 @@ a {
 }
 .splide__track {
 	padding: 30px 0;
+}
+.splide__slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 /* Сначала увеличиваем масштаб центрального слайда */
@@ -347,16 +408,18 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	gap: 25px;
 }
 .guide__box {
 	width: 320px;
-	height: 470px;
+
 	text-align: center;
 	background-color: #fff;
 }
 .guide__box-mane {
 	object-fit: cover;
 	width: 100%;
+	height: auto;
 	margin-bottom: 20px;
 }
 .guide__box-name {
@@ -381,14 +444,10 @@ a {
 }
 
 .guide__box-social a:hover img {
-	transform: translateY(
-		-5px
-	); /* Поднимаем изображение на 2px при наведении курсора */
+	transform: translateY(-5px);
 }
 
 /*----Наши клиенты----*/
-/* Icon set - http://ionicons.com/ */
-
 .clients {
 	padding: 50px 0;
 }
@@ -517,7 +576,7 @@ figure.snip1139 .author h5 span {
 	justify-content: space-between;
 	column-gap: 50px;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 }
 
 .form {
@@ -587,6 +646,8 @@ figure.snip1139 .author h5 span {
 .footer__box {
 	display: flex;
 	align-items: center;
+	row-gap: 40px;
+	column-gap: 5px;
 }
 
 .footer__box img {
@@ -605,7 +666,7 @@ figure.snip1139 .author h5 span {
 .footer__box .footer__social {
 	width: 30px;
 	height: 30px;
-	margin-right: 20px;
+	align-items: center;
 }
 
 .footer__box a img {

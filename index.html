@@ -7,8 +7,10 @@
   <link href="
   https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
   <title>Nova_Travel</title>
 </head>
 
@@ -34,15 +36,22 @@
             <li class="nav__list">
               <a href="#" class="nav__link">Туры</a>
             </li>
-
           </ul>
         </nav>
+
+
 
       </div>
       <div class="header__button btn">
         <a href="#" class="reg_btn">Регистрация</a>
       </div>
+      <div class="menu__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+
 
     <div class="container">
       <div class="header_info">
@@ -61,7 +70,7 @@
   <section class="about">
     <div class="container">
       <div class="about__wrapper">
-        <div class="about__info-left">
+        <div class="about__info-left" data-aos="fade-right">
           <p class="about__desc desc"><span></span>О нас<span></span></p>
           <h2 class="about__info-title">Добро пожаловать</h2>
 
@@ -116,7 +125,7 @@
           </div>
         </div>
 
-        <div class="about__info-rigth">
+        <div class="about__info-rigth" data-aos="fade-left">
           <img class="about__info-img" src="./images/about/about.jpg" alt="">
         </div>
 
@@ -129,52 +138,31 @@
     <div class="container">
       <h3 class="about__desc desc"><span></span>Наши услуги<span></span></h3>
       <div class="services__wrapper">
-        <div class="services__box">
+        <div class="services__box" data-aos="fade-down" data-aos-duration="2000">
           <img src="./images/services/user-heart-fill.svg" alt="">
           <h3 class="services__box-title">Лучшие гиды</h3>
           <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
         </div>
 
-        <div class="services__box">
+        <div class="services__box" data-aos="fade-down" data-aos-duration="2300">
           <img src="./images/services/hotel-line.svg" alt="">
           <h3 class="services__box-title">Лучшие гиды</h3>
           <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
         </div>
 
-        <div class="services__box">
+        <div class="services__box" data-aos="fade-down" data-aos-duration="2600">
           <img src="./images/services/earth-line.svg" alt="">
           <h3 class="services__box-title">Лучшие гиды</h3>
           <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
         </div>
 
-        <div class="services__box">
+        <div class="services__box" data-aos="fade-down" data-aos-duration="2900">
           <img src="./images/services/camera-3-fill.svg" alt="">
           <h3 class="services__box-title">Лучшие гиды</h3>
           <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
         </div>
-        <div class="services__box">
-          <img src="./images/services/user-heart-fill.svg" alt="">
-          <h3 class="services__box-title">Лучшие гиды</h3>
-          <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
-        </div>
 
-        <div class="services__box">
-          <img src="./images/services/hotel-line.svg" alt="">
-          <h3 class="services__box-title">Лучшие гиды</h3>
-          <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
-        </div>
 
-        <div class="services__box">
-          <img src="./images/services/earth-line.svg" alt="">
-          <h3 class="services__box-title">Лучшие гиды</h3>
-          <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
-        </div>
-
-        <div class="services__box">
-          <img src="./images/services/camera-3-fill.svg" alt="">
-          <h3 class="services__box-title">Лучшие гиды</h3>
-          <p class="services__box-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo.</p>
-        </div>
       </div>
 
     </div>
@@ -190,39 +178,7 @@
             <ul class="splide__list ">
               <li class="splide__slide">
                 <div class="tours__box">
-                  <img src="./images/tours/t-1.jpg" alt="">
-                  <div class="tours__info-blocks">
-                    <div class="tours__info-block">
-                      <img src="./images/tours/map-pin-line.svg" alt="">
-                      <p>Турция</p>
-                    </div>
-
-                    <div class="tours__info-block">
-                      <img src="./images/tours/calendar-2-line.svg" alt="">
-                      <p>7 дней</p>
-                    </div>
-                    <div class="tours__info-block">
-                      <img src="./images/tours/user-follow-line.svg" alt="">
-                      <p>2 персоны</p>
-                    </div>
-                  </div>
-                  <h4 class="tours__price">
-                    $200.00
-                  </h4>
-                  <p class="tours__box-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
-                  </p>
-                  <div class="about__info-btn btn">
-                    <a href="#" class="about__info-more">
-                      Узнать больше
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="tours__box">
-                  <img src="./images/tours/t-1.jpg" alt="">
+                  <img class="tours__box-img" src="./images/tours/t-1.jpg" alt="">
                   <div class="tours__info-blocks">
                     <div class="tours__info-block">
                       <img src="./images/tours/map-pin-line.svg" alt="">
@@ -255,7 +211,7 @@
 
               <li class="splide__slide">
                 <div class="tours__box">
-                  <img src="./images/tours/t-1.jpg" alt="">
+                  <img class="tours__box-img" src="./images/tours/t-1.jpg" alt="">
                   <div class="tours__info-blocks">
                     <div class="tours__info-block">
                       <img src="./images/tours/map-pin-line.svg" alt="">
@@ -288,7 +244,7 @@
 
               <li class="splide__slide">
                 <div class="tours__box">
-                  <img src="./images/tours/t-1.jpg" alt="">
+                  <img class="tours__box-img" src="./images/tours/t-1.jpg" alt="">
                   <div class="tours__info-blocks">
                     <div class="tours__info-block">
                       <img src="./images/tours/map-pin-line.svg" alt="">
@@ -321,7 +277,7 @@
 
               <li class="splide__slide">
                 <div class="tours__box">
-                  <img src="./images/tours/t-1.jpg" alt="">
+                  <img class="tours__box-img" src="./images/tours/t-1.jpg" alt="">
                   <div class="tours__info-blocks">
                     <div class="tours__info-block">
                       <img src="./images/tours/map-pin-line.svg" alt="">
@@ -352,6 +308,71 @@
                 </div>
               </li>
 
+              <li class="splide__slide">
+                <div class="tours__box">
+                  <img class="tours__box-img" src="./images/tours/t-1.jpg" alt="">
+                  <div class="tours__info-blocks">
+                    <div class="tours__info-block">
+                      <img src="./images/tours/map-pin-line.svg" alt="">
+                      <p>Турция</p>
+                    </div>
+
+                    <div class="tours__info-block">
+                      <img src="./images/tours/calendar-2-line.svg" alt="">
+                      <p>7 дней</p>
+                    </div>
+                    <div class="tours__info-block">
+                      <img src="./images/tours/user-follow-line.svg" alt="">
+                      <p>2 персоны</p>
+                    </div>
+                  </div>
+                  <h4 class="tours__price">
+                    $200.00
+                  </h4>
+                  <p class="tours__box-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <div class="about__info-btn btn">
+                    <a href="#" class="about__info-more">
+                      Узнать больше
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="tours__box">
+                  <img class="tours__box-img" src="./images/tours/t-1.jpg" alt="">
+                  <div class="tours__info-blocks">
+                    <div class="tours__info-block">
+                      <img src="./images/tours/map-pin-line.svg" alt="">
+                      <p>Турция</p>
+                    </div>
+
+                    <div class="tours__info-block">
+                      <img src="./images/tours/calendar-2-line.svg" alt="">
+                      <p>7 дней</p>
+                    </div>
+                    <div class="tours__info-block">
+                      <img src="./images/tours/user-follow-line.svg" alt="">
+                      <p>2 персоны</p>
+                    </div>
+                  </div>
+                  <h4 class="tours__price">
+                    $200.00
+                  </h4>
+                  <p class="tours__box-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <div class="about__info-btn btn">
+                    <a href="#" class="about__info-more">
+                      Узнать больше
+                    </a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -363,7 +384,7 @@
     <div class="container">
       <h3 class="about__desc desc"><span></span>Сотрудники нашей компании<span></span></h3>
       <div class="guide__wrapper">
-        <div class="guide__box">
+        <div class="guide__box" data-aos="fade-up" data-aos-duration="1700">
           <img class="guide__box-mane" src="./images/guide/guide.png" alt="">
           <div class="guide__box-name">
             <h4>Александор Петренко</h4>
@@ -378,7 +399,7 @@
           </div>
         </div>
 
-        <div class="guide__box">
+        <div class="guide__box" data-aos="fade-up" data-aos-duration="2200">
           <img class="guide__box-mane" src="./images/guide/guide.png" alt="">
           <div class="guide__box-name">
             <h4>Александор Петренко</h4>
@@ -393,7 +414,7 @@
           </div>
         </div>
 
-        <div class="guide__box">
+        <div class="guide__box" data-aos="fade-up" data-aos-duration="2500">
           <img class="guide__box-mane" src="./images/guide/guide.png" alt="">
           <div class="guide__box-name">
             <h4>Александор Петренко</h4>
@@ -410,8 +431,6 @@
       </div>
     </div>
   </section>
-
-
 
 
   <section class="clients">
@@ -568,6 +587,7 @@
   <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
